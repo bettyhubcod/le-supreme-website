@@ -1,37 +1,44 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import "../styles/Navbar.css";
+import logo from "../assets/logo.png"
+
 function Navbar() {
-   const [etat,setState]=useState(false)
-
-   
-
-   
-
+  const [etat, setState] = useState(false);
   return (
-
     <nav>
+      <div className="menu">
+        <div>
+          <NavLink to="/" >
+            <img src={logo} alt="Le Suprême" />
+          </NavLink>
+        </div>
 
-      <div>  <Link to="/">photo</Link></div>
-   
-      <button onClick={()=>setState(prev=>!prev)}>{etat?<X/>:<Menu/>}</button>
-      {etat &&<ul >
-        <li>
-          <Link to="/">Accueil</Link>
-        </li>
-        <li>
-          <Link to="/menu">Menu</Link>
-        </li>
-        <li>
-          <Link to="/galerie">Galerie</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>}
-    
+        <button onClick={() => setState((prev) => !prev)}>
+          {etat ? <X /> : <Menu />}
+        </button>
+      </div>
+      <div className="ligne_decor"></div>
+
+      {etat && (
+        <ul>
+          <li>
+            <NavLink to="/">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/menu">Menu</NavLink>
+          </li>
+          <li>
+            <NavLink to="/galerie">Galerie</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" id="contact">Contact</NavLink>
+          </li>
+        </ul>
+      )}
+      <div className="ligne_decor"></div>
     </nav>
-
   );
 }
 
