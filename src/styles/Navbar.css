@@ -65,3 +65,22 @@ nav img{
     height:auto;
 }
 
+.nav-desktop{
+    display: none;
+}
+
+
+/* pour la partie responsivite */
+@media (min-width: 1024px) {
+    nav button {
+        display: none;
+    }
+    .nav-desktop{
+        display: flex
+    }
+    .nav-desktop ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
