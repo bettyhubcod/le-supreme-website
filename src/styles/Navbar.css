@@ -2,6 +2,8 @@
 
 body{
        background-color: #F7F4EC ;
+       padding: 0;
+       margin: 0;
 }
 
 .menu {
@@ -28,8 +30,6 @@ nav a.active {
     border-radius: 20px;
     color: #F7F4EC;
   padding: 6px 10px;
- 
-   
 
 }
 

@@ -1,0 +1,57 @@
+footer{
+    background-color: #2e5436;
+    width:auto;
+    height: fit-content;
+    padding: 30px;
+}
+img{
+    width: 80px;
+    height: 80px;
+    background-color: #F7F4EC;
+    border-radius:20px ;
+}   
+.description{
+    color: #F7F4EC;
+    opacity: 60%;
+     font-family: 'Inter', sans-serif;
+     font-weight:lighter;
+}
+.visitez-nous{
+    padding-top: 20px;
+    color: #F7F4EC;
+    font-size: 15px;
+}
+.info{
+    opacity: 60%;
+    font-family: 'Inter', sans-serif;
+}
+
+.info p {
+    display: flex;
+    gap: 10px;
+}
+.suivez-nous {
+     color: #F7F4EC;
+}
+.suivez-nous p{
+     opacity: 60%;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+
+    color: #F7F4EC ;
+}
+.ligne_decor{
+  background-color: #DDD6C6;
+    width:100%;
+    height: 0.5px;
+}
+.droits p {
+     color: #F7F4EC ;
+   font-family: 'Inter', sans-serif;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
