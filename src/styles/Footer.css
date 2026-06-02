@@ -4,12 +4,16 @@ footer{
     height: fit-content;
     padding: 30px;
 }
-img{
+.logo img{
     width: 80px;
     height: 80px;
     background-color: #F7F4EC;
     border-radius:20px ;
 }   
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
 .description{
     color: #F7F4EC;
     opacity: 60%;
@@ -54,4 +58,20 @@ a{
 .icon{
     display: flex;
     gap: 10px;
+}
+/* ── FOOTER DESKTOP ── */
+@media (min-width: 1024px) {
+  footer {
+    padding: 60px 100px;
+  }
+
+  .footer-top {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
 }
