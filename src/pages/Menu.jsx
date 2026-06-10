@@ -1,5 +1,12 @@
+import MenuCard from "../components/MenuCard";
+
 function Menu() {
-  return <div>Menu</div>
+  return (
+    <>
+      <MenuCard nom="Burger simple" prix={1500} />
+      <MenuCard nom="Chouquette crème" prix={null} />
+    </>
+  );
 }
 
-export default Menu 
+export default Menu;
