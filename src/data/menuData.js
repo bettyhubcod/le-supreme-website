@@ -1,3 +1,20 @@
+import burger from "../assets/menu/burger_menu.jpg"
+import patisserie from "../assets/menu/pastries.jpg"
+import brochette from "../assets/menu/brochette.jpg"
+import crepes from "../assets/menu/crepes.jpg"
+import entree from "../assets/menu/entree.jpg"
+import gambas from "../assets/menu/gambas.jpg"
+import gateau from "../assets/menu/gateau.jpg"
+import glace from "../assets/menu/glace.jpg"
+import jus from "../assets/menu/jus.jpg"
+import pizza from "../assets/menu/pizza.jpg"
+import poulet from "../assets/menu/poulet.jpg"
+import sandwich from "../assets/menu/sandwich.jpeg"
+import tacos from "../assets/menu/tacos.jpg"
+import shawarmas from "../assets/menu/shawarmas.jpg"
+import Paninis from "../assets/menu/panini.jpg"
+
+
 export const categories = [
   "Entrées", "Boissons", "Portions Gâteaux", "Crêpes", "Glaces",
   "Burgers", "Chawarmas", "Paninis", "Pizzas", "Sandwichs", "Tacos", "Poulet", "Brochettes", "Nos plats"
@@ -103,3 +120,37 @@ export const plats = [
   { id: 70, nom: "½ Poulet", prix: 4000, categorie: "Nos plats" },
   { id: 71, nom: "Poulet entier", prix: 7000, categorie: "Nos plats" },
 ]
+
+export const categorieInfo = {
+  "Entrées": { sousTitre: "FRAÎCHES ET SAVOUREUSES", titre: "Entrées" },
+  "Boissons": { sousTitre: "CHAUDES ET FRAÎCHES", titre: "Boissons" },
+  "Portions Gâteaux": { sousTitre: "FAITS MAISON", titre: "Portions & Gâteaux" },
+  "Crêpes": { sousTitre: "SUCRÉES ET SALÉES", titre: "Crêpes" },
+  "Glaces": { sousTitre: "ONCTUEUSES ET FRAÎCHES", titre: "Glaces" },
+  "Burgers": { sousTitre: "GÉNÉREUX ET GOURMANDS", titre: "Burgers" },
+  "Chawarmas": { sousTitre: "SAVEURS D'ORIENT", titre: "Chawarmas" },
+  "Paninis": { sousTitre: "CROUSTILLANTS ET FONDANTS", titre: "Paninis" },
+  "Pizzas": { sousTitre: "AU FEU DE BOIS", titre: "Pizzas" },
+  "Sandwichs": { sousTitre: "FAITS À LA COMMANDE", titre: "Sandwichs" },
+  "Tacos": { sousTitre: "À LA FRANÇAISE", titre: "Tacos" },
+  "Poulet": { sousTitre: "CROUSTILLANT ET JUTEUX", titre: "Poulet" },
+  "Brochettes": { sousTitre: "GRILLÉES À LA PERFECTION", titre: "Brochettes" },
+  "Nos plats": { sousTitre: "NOS SPÉCIALITÉS", titre: "Nos Plats" },
+}
+
+export const categorieImages = {
+  "Entrées": entree,
+  "Boissons": jus,
+  "Portions Gâteaux": gateau,
+  "Crêpes": crepes,
+  "Glaces": glace,
+  "Burgers": burger,
+  "Chawarmas": shawarmas,
+  "Paninis": Paninis,
+  "Pizzas": pizza,
+  "Sandwichs": sandwich,
+  "Tacos": tacos,
+  "Poulet": poulet,
+  "Brochettes": brochette,
+  "Nos plats": gambas,
+}

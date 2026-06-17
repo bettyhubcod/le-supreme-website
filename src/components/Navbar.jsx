@@ -53,7 +53,7 @@
                 <NavLink to="/galerie">Galerie</NavLink>
               </li>
               <li>
-                <NavLink to="/contact" id="contact">
+                <NavLink to="/contact" >
                   Contact
                 </NavLink>
               </li>

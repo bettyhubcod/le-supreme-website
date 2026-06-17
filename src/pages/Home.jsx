@@ -5,7 +5,7 @@ import lieu1 from "../assets/lieu/lieu1.jpeg";
 import lieu2 from "../assets/lieu/lieu2.jpeg";
 import lieu3 from "../assets/lieu/lieu3.jpeg";
 import burger from "../assets/burger.jpg";
-import pastries from "../assets/pastries.jpg";
+import pastries from "../assets/menu/pastries.jpg";
 import "../styles/home.css";
 import { FaStar, FaCoffee, FaUtensils } from "react-icons/fa";
 function Home() {
