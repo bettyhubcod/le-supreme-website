@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
+import "./styles/global.css"
+
 function App() {
   return (
     <BrowserRouter>
