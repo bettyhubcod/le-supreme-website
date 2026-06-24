@@ -7,27 +7,40 @@ import contactImg from "../assets/contact.jpg";
 function Contact() {
   return (
     <main className="contact-page">
-
       {/* HERO CONTACT */}
       <div className="contact-hero">
         <div className="contact-hero-content">
           <div className="part">NOUS CONTACTER</div>
-          <h1>On a hâte de<br />vous accueillir</h1>
-          <p>Réservez une table, posez-nous une question ou venez simplement faire un tour.</p>
+          <h1>
+            On a hâte de
+            <br />
+            vous accueillir
+          </h1>
+          <p>
+            Réservez une table, posez-nous une question ou venez simplement
+            faire un tour.
+          </p>
 
           <div className="contact-cards">
             <div className="contact-card">
               <MapPin size={18} className="contact-icon" />
               <div>
-                <span>ADRESSE</span>
-                <p>Dakar, Sénégal</p>
+                <span>ADRESSES</span>
+                <p>Mariste — [adresse]</p>
+                <p>Mermoz — [adresse]</p>
+                <p>Plateau — [adresse]</p>
+                <p>Ouakam — [adresse]</p>
               </div>
             </div>
+
             <div className="contact-card">
               <Phone size={18} className="contact-icon" />
               <div>
                 <span>TÉLÉPHONE</span>
-                <p>+221 77 000 00 00</p>
+                <p>Mariste — +221 77 XXX XX XX</p>
+                <p>Mermoz — +221 77 XXX XX XX</p>
+                <p>Plateau — +221 77 XXX XX XX</p>
+                <p>Ouakam — +221 77 XXX XX XX</p>
               </div>
             </div>
             <div className="contact-card">
@@ -56,7 +69,6 @@ function Contact() {
           <img src={contactImg} alt="Le Suprême" />
         </div>
       </div>
-
     </main>
   );
 }

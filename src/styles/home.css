@@ -183,6 +183,10 @@ button {
   margin-top: 40px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .card1,
 .card2,
 .card3 {
