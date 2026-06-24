@@ -1,0 +1,112 @@
+/* ── GALERIE HERO ── */
+.galerie-hero {
+  padding: 40px 24px 20px;
+}
+
+.galerie-hero .part {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #C97A4F;
+}
+
+.galerie-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  color: #2E2A24;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.galerie-hero p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6E6962;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+/* ── GALERIE GRID ── */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 0 24px 60px;
+}
+
+.galerie-item {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.galerie-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Variation des hauteurs façon masonry — mobile */
+.galerie-item:nth-child(1) { grid-row: span 2; }
+.galerie-item:nth-child(4) { grid-row: span 2; }
+.galerie-item:nth-child(7) { grid-row: span 2; }
+.galerie-item:nth-child(10) { grid-row: span 2; }
+
+.galerie-item img {
+  height: 180px;
+}
+
+.galerie-item:nth-child(1) img,
+.galerie-item:nth-child(4) img,
+.galerie-item:nth-child(7) img,
+.galerie-item:nth-child(10) img {
+  height: 380px;
+}
+
+.lieux-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 24px 30px;
+}
+@media (min-width: 1024px) {
+  .galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    gap: 12px;
+    padding: 0 100px 80px;
+  }
+
+  /* Reset le pattern mobile */
+  .galerie-item:nth-child(n) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .galerie-item img {
+    height: 100% !important;
+  }
+
+  /* Pattern desktop façon maquette */
+  .galerie-item:nth-child(6n + 1) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .galerie-item:nth-child(6n + 4) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .galerie-item:nth-child(6n + 6) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .menu-liste {
+    flex: 2;
+    padding: 0;
+    max-width: none;
+    margin-top: 50px;
+  }
+}

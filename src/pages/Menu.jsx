@@ -37,18 +37,20 @@ function Menu() {
       </div>
 
       {/* Image catégorie */}
+      <div className="menu-content-wrapper">
       <div className="menu-categorie-header">
-        <div className="menu-categorie-image">
-          {categorieImages[categorie] && (
-            <img src={categorieImages[categorie]} alt={categorie} />
-          )}
-        </div>
-        <p className="menu-categorie-sous-titre">
+          <p className="menu-categorie-sous-titre">
           {categorieInfo[categorie].sousTitre}
         </p>
         <h2 className="menu-categorie-titre">
           {categorieInfo[categorie].titre}
         </h2>
+        <div className="menu-categorie-image">
+          {categorieImages[categorie] && (
+            <img src={categorieImages[categorie]} alt={categorie} />
+          )}
+        </div>
+      
       </div>
 
       {/* Plats */}
@@ -63,6 +65,7 @@ function Menu() {
             </p>
           </div>
         ))}
+      </div>
       </div>
     </main>
   );
