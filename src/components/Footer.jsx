@@ -8,6 +8,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-top">
+        {/* COL 1 — Logo + description */}
         <div className="footer-col">
           <div className="logo">
             <NavLink to="/">
@@ -22,17 +23,24 @@ function Footer() {
           </div>
         </div>
 
+        {/* COL 2 — 4 adresses */}
         <div className="footer-col">
           <div className="visitez-nous">
-            <h3>Visitez-nous</h3>
+            <h3>4 adresses à Dakar</h3>
             <div className="info">
-              <p><MapPin />Dakar, Sénégal</p>
-              <p><Phone />+221 77 000 00 00</p>
-              <p><Clock />7h – 23h, tous les jours</p>
+              <p><MapPin size={16} />Mariste, Mermoz, Plateau, Ouakam</p>
+              <p><Clock size={16} />7h – 23h, tous les jours</p>
+              <div className="telephones">
+                <p><Phone size={16} />Mariste — +221 77 123 45 67</p>
+                <p><Phone size={16} />Mermoz — +221 77 234 56 78</p>
+                <p><Phone size={16} />Plateau — +221 77 345 67 89</p>
+                <p><Phone size={16} />Ouakam — +221 77 456 78 90</p>
+              </div>
             </div>
           </div>
         </div>
 
+        {/* COL 3 — Réseaux + nav */}
         <div className="footer-col">
           <div className="suivez-nous">
             <h3>Suivez-nous</h3>
